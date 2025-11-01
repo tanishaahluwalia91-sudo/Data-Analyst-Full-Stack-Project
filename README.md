@@ -87,8 +87,6 @@ Performed using SQL (MySQL) and Power Query in Power BI:
 * What is the most common combination of genre + rating?
 
 * What percentage of total content is from the top 5 countries?
-```
-
 ---
 
 ## Key Performance Indicators (KPIs)
