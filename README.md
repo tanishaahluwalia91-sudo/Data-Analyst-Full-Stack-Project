@@ -56,33 +56,37 @@ Performed using SQL (MySQL) and Power Query in Power BI:
 
 ## Exploratory Analysis (SQL)
 
-Example queries used for analysis:
+# SQL Questions:
 
-```sql
--- Total titles on Netflix
-SELECT COUNT(*) AS total_titles FROM netflix_data;
+* How many total titles are available on Netflix?
 
--- Movies vs TV Shows
-SELECT type, COUNT(*) AS total FROM netflix_data GROUP BY type;
+* What percentage of content is Movies vs TV Shows?
 
--- Top 10 countries by content
-SELECT country, COUNT(*) AS total_titles
-FROM netflix_data
-GROUP BY country
-ORDER BY total_titles DESC
-LIMIT 10;
+* Which country produces the most Netflix content?
 
--- Most common rating
-SELECT rating, COUNT(*) AS total
-FROM netflix_data
-GROUP BY rating
-ORDER BY total DESC;
+* Who are the top 10 most featured directors?
 
--- Trend of new releases over years
-SELECT release_year, COUNT(*) AS total_titles
-FROM netflix_data
-GROUP BY release_year
-ORDER BY release_year;
+* What’s the most common rating (PG, TV-MA, R, etc.) by region?
+
+* Which year saw the highest number of releases?
+
+* What is the trend of Netflix releases over time (2008–2025)?
+
+* What are the top 10 actors who appear in the most titles?
+
+* How many titles belong to each genre/category (listed_in)?
+
+* Which genres are most popular in each country?
+
+* What is the average duration of movies vs. number of seasons for shows?
+
+* Which countries dominate Netflix Originals (if mentioned in title or description)?
+
+* How many titles were added each month/year (date_added trend)?
+
+* What is the most common combination of genre + rating?
+
+* What percentage of total content is from the top 5 countries?
 ```
 
 ---
